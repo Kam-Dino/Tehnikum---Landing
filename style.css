@@ -427,6 +427,98 @@ h1 {
 
 
 
+
+
+
+    /* Контейнер секции */
+    .teacher {
+    background-color: #fff; /* Белый фон */
+    padding: 40px; /* Отступы вокруг секции */
+    display: flex;
+    justify-content: center;
+  }
+
+  .teacher-section-title {
+    width: 593px; /* Точная ширина */
+    height: 68px; /* Точная высота */
+    margin-left: 119px; /* Отступ слева */
+    font-family: "TT Hoves", sans-serif; /* Шрифт */
+    font-weight: 500; /* Толщина шрифта */
+    font-size: 58px; /* Размер шрифта */
+    line-height: 68.32px; /* Межстрочный интервал */
+    text-transform: uppercase; /* Заглавные буквы (ALL CAPS) */
+    color: #222222; /* Цвет текста */
+    letter-spacing: 1%; /* Межбуквенное расстояние */
+  }
+  
+  .teacher-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr; /* Первая колонка фиксированная для фото, вторая — гибкая */
+    gap: 20px; /* Расстояние между колонками */
+    align-items: center; /* Выравнивание по вертикали */
+    max-width: 1280px;
+    width: 100%;
+  }
+  
+  /* Фото преподавателя */
+  .teacher-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для фото */
+  }
+  
+  /* Блок с текстовой информацией */
+  .teacher-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между элементами внутри блока */
+  }
+  
+  .teacher-name {
+    font-size: 24px; /* Размер шрифта имени */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .teacher-role {
+    font-size: 18px;
+    color: #555; /* Серый цвет текста */
+    margin: 10px 0;
+  }
+  
+  .teacher-details {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Промежуток между пунктами списка */
+  }
+  
+  .teacher-details li {
+    font-size: 16px;
+    line-height: 1.5; /* Увеличенное межстрочное расстояние */
+  }
+  
+  .teacher-details a {
+    color: #007bff; /* Синий цвет для ссылки */
+    text-decoration: none;
+  }
+  
+  .teacher-details a:hover {
+    text-decoration: underline;
+  }
+
+  
+
+
+
+
+
+
+
+
  .benefits-section {
     width: 100%;
     max-width: 1280px;
