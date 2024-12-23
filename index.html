@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
     <link rel="stylesheet" href="./style.css" />
     <title>TEHNIKUM</title>
   </head>
@@ -120,52 +121,67 @@
 
 
     <section class="reviews-section">
-      <h2 class="reviews-title">ОТЗЫВЫ НАШИХ СТУДЕНТОВ</h2>
-      <div class="reviews-wrapper">
-          <!-- Первый отзыв -->
-          <div class="review-card">
-              <div class="review-icon">
-                  <img src="image/youtube-icon.svg" alt="YouTube">
+      <h2 class="feedbackTitle">ОТЗЫВЫ НАШИХ СТУДЕНТОВ</h2>    
+        <section class="splide feedback" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="feedbackCard">
+                  <div class="feedbackIcon">
+                      <img src="./image/" alt="YouTube">
+                  </div>
+                  <p class="feedbackText">
+                      Я пришел в Техникум чтобы сменить профессию на front-end разработчика и окончательно расстаться с предыдущим местом работы.
+                      Пробуйте себя во всем, ничего не бойтесь и у вас всё получится!
+                  </p>
+                  <div class="feedbackAuthor">
+                      <img src="image/avatar_ruslan.jpg" alt="Руслан Мухутдинов" class="avatar">
+                      <span class="author-name">Руслан Мухутдинов</span>
+                  </div>
               </div>
-              <p class="review-text">
-                  Я пришел в Техникум чтобы сменить профессию на front-end разработчика и окончательно расстаться с предыдущим местом работы.
-                  Пробуйте себя во всем, ничего не бойтесь и у вас всё получится!
-              </p>
-              <div class="review-author">
-                  <img src="image/avatar_ruslan.jpg" alt="Руслан Мухутдинов" class="avatar">
-                  <span class="author-name">Руслан Мухутдинов</span>
+              </li>
+              <li class="splide__slide">
+                <div class="feedbackCard">
+                  <div class="feedbackIcon">
+                      <img src="image/youtube-icon.svg" alt="YouTube">
+                  </div>
+                  <p class="feedbackText">
+                      Я выбрал курс веб-верстальщика, потому что мне это нравится и это круто. После окончания курса, меня пригласили на стажировку.
+                  </p>
+                  <div class="feedbackAuthor">
+                      <img src="image/avatar_iskander.jpg" alt="Юлдашев Искандар" class="avatar">
+                      <span class="author-name">Юлдашев Искандар</span>
+                  </div>
               </div>
+              </li>
+              <li class="splide__slide">
+                <div class="feedbackCard">
+                  <div class="feedbackIcon">
+                      <img src="image/youtube-icon.svg" alt="YouTube">
+                  </div>
+                  <p class="feedbackText">
+                      Я увидел что Техникум приглашает на бесплатную лекцию по программированию. После курса я планирую развиваться!
+                  </p>
+                  <div class="feedbackAuthor">
+                      <img src="image/avatar_maxmudov.jpg" alt="Махмудов Джахонгир" class="avatar">
+                      <span class="author-name">Махмудов Джахонгир</span>
+                  </div>
+              </div>
+              </li>
+            </ul>
           </div>
-  
-          <!-- Второй отзыв -->
-          <div class="review-card">
-              <div class="review-icon">
-                  <img src="image/youtube-icon.svg" alt="YouTube">
-              </div>
-              <p class="review-text">
-                  Я выбрал курс веб-верстальщика, потому что мне это нравится и это круто. После окончания курса, меня пригласили на стажировку.
-              </p>
-              <div class="review-author">
-                  <img src="image/avatar_iskander.jpg" alt="Юлдашев Искандар" class="avatar">
-                  <span class="author-name">Юлдашев Искандар</span>
-              </div>
-          </div>
-  
-          <!-- Третий отзыв -->
-          <div class="review-card">
-              <div class="review-icon">
-                  <img src="image/youtube-icon.svg" alt="YouTube">
-              </div>
-              <p class="review-text">
-                  Я увидел что Техникум приглашает на бесплатную лекцию по программированию. После курса я планирую развиваться!
-              </p>
-              <div class="review-author">
-                  <img src="image/avatar_maxmudov.jpg" alt="Махмудов Джахонгир" class="avatar">
-                  <span class="author-name">Махмудов Джахонгир</span>
-              </div>
-          </div>
+        </section>
+
+
       </div>
   </section>
+
+
+  <!--  -->
+
+  
+
+  <!--  -->
 
   <section class="saleTimer" id="timer2">
     <h3 class="saleTimerTitle">10% скидка действует</h3>
@@ -191,7 +207,29 @@
   </section>
     
 
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide.feedback', {
+        perPage: 3,
+        gap:20,
+        pagination: true,
+        paginationType: "fraction",
+        rewind: true,
+        arrows: false,
+        autoplay: true,
+        interval: 1000,
+        breakpoints: {
+          900: {
+            perPage: 1,
+          },
+        },
+      });
 
+      splide.mount();
+    });
+  </script>
+
+  <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
   <script src="./main.js"></script> 
   </body>
 </html>
