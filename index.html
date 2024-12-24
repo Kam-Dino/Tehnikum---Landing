@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css"/>
     <title>TEHNIKUM</title>
   </head>
   <body>
@@ -128,14 +128,14 @@
               <li class="splide__slide">
                 <div class="feedbackCard">
                   <div class="feedbackIcon">
-                      <img src="./image/" alt="YouTube">
+                      <img src="image/icon_youtube .png" alt="YouTube">
                   </div>
                   <p class="feedbackText">
                       Я пришел в Техникум чтобы сменить профессию на front-end разработчика и окончательно расстаться с предыдущим местом работы.
                       Пробуйте себя во всем, ничего не бойтесь и у вас всё получится!
                   </p>
                   <div class="feedbackAuthor">
-                      <img src="image/avatar_ruslan.jpg" alt="Руслан Мухутдинов" class="avatar">
+                      <img src="image/Frame 256.png" alt="Руслан Мухутдинов" class="avatar">
                       <span class="author-name">Руслан Мухутдинов</span>
                   </div>
               </div>
@@ -143,13 +143,13 @@
               <li class="splide__slide">
                 <div class="feedbackCard">
                   <div class="feedbackIcon">
-                      <img src="image/youtube-icon.svg" alt="YouTube">
+                      <img src="image/icon_youtube .png" alt="YouTube">
                   </div>
                   <p class="feedbackText">
                       Я выбрал курс веб-верстальщика, потому что мне это нравится и это круто. После окончания курса, меня пригласили на стажировку.
                   </p>
                   <div class="feedbackAuthor">
-                      <img src="image/avatar_iskander.jpg" alt="Юлдашев Искандар" class="avatar">
+                      <img src="image/Frame 257.png" alt="Юлдашев Искандар" class="avatar">
                       <span class="author-name">Юлдашев Искандар</span>
                   </div>
               </div>
@@ -157,13 +157,13 @@
               <li class="splide__slide">
                 <div class="feedbackCard">
                   <div class="feedbackIcon">
-                      <img src="image/youtube-icon.svg" alt="YouTube">
+                      <img src="image/icon_youtube .png" alt="YouTube">
                   </div>
                   <p class="feedbackText">
                       Я увидел что Техникум приглашает на бесплатную лекцию по программированию. После курса я планирую развиваться!
                   </p>
                   <div class="feedbackAuthor">
-                      <img src="image/avatar_maxmudov.jpg" alt="Махмудов Джахонгир" class="avatar">
+                      <img src="image/Frame 258.png" alt="Махмудов Джахонгир" class="avatar">
                       <span class="author-name">Махмудов Джахонгир</span>
                   </div>
               </div>
@@ -207,27 +207,72 @@
   </section>
     
 
-  <script>
-    document.addEventListener( 'DOMContentLoaded', function() {
-      var splide = new Splide( '.splide.feedback', {
-        perPage: 3,
-        gap:20,
-        pagination: true,
-        paginationType: "fraction",
-        rewind: true,
-        arrows: false,
-        autoplay: true,
-        interval: 1000,
-        breakpoints: {
-          900: {
-            perPage: 1,
-          },
-        },
-      });
+  <section class="doubt-section">
+    <h2 class="doubt-title">ВСЕ ЕЩЕ СОМНЕВАЕШЬСЯ?</h2>
+    <p class="doubt-subtitle">
+      Тогда последний козырь: после каждого выпуска мы<br> устраиваем крутые вечеринки в честь вручения дипломов!
+    </p>
+  
+    <div class="splide" id="slider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="./image/slider_image_01.png" alt="Фото участников">
+          </li>
+          <li class="splide__slide">
+            <img src="./image/slider_image_02.png" alt="Фото участников">
+          </li>
+          <li class="splide__slide">
+            <img src="./image/slider_image_03.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-      splide.mount();
-    });
-  </script>
+
+  <footer>
+    <div class="footerLeft">
+      <h2>запишись на курс прямо сейчас!</h2>
+      <div>
+        <div>
+          <img src="./image/Icon_keyboard.svg" alt="">
+          <p>html, css, js</p>
+        </div>
+        <div>
+          <img src="./image/icon_game_bot.svg" alt="">
+          <p>Разработка онлайн игр</p>
+        </div>
+        <div>
+          <img src="./image/icon_database.svg" alt="">
+          <p>Введение в Bootstrap и Github</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="footerRight">
+      <div class="footerForm">
+        <h3>оставь заявку</h3>
+        <p>начало обучения: 1 декабря</p>
+        <form action="">
+          <input type="text" placeholder="Имя" />
+          <input type="text" placeholder="Фамилия" />
+          <input type="text" placeholder="Очество" />
+          <button>Записаться на курс</button>
+        </form>
+        <span>Остались вопросы?</span>
+        <p>
+          Звони: +998 33 980 72 64 Наши консультанты доступны каждый день <br>
+          с 10:00 до 22:00.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
 
   <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
   <script src="./main.js"></script> 

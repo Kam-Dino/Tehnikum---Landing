@@ -34,3 +34,17 @@ setInterval(() => {
     saleDate("timer1", finishDate);
     saleDate("timer2", finishDate);
 }, 1000);
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#slider', {
+      type: 'loop',
+      perPage: 3,
+      autoplay: true,
+      interval: 3000,
+      arrows: false,
+      pagination: true,
+    }).mount();
+  });
